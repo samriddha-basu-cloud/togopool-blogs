@@ -13,7 +13,8 @@
         <script src='https://maps.googleapis.com/maps/api/js?v=3&amp;libraries=places&languages=en&key=AIzaSyB9PP9WVCovkYUaRZu3S-ts5sDExixgLsg'></script>
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
-
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
       
         <!-- 
           - favicon
@@ -660,7 +661,7 @@
         #FOOTER
         \*-----------------------------------*/
 
-        .footer {
+        /* .footer {
         background-color: var(--white-2);
         padding-block: 20px;
         }
@@ -674,10 +675,44 @@
         color: var(--red-crayola);
         font-weight: var(--fw-500);
         display: inline-block;
+        } */
+        footer{
+        background: #111;
+        height: auto;
+        width: 100vw;
+        font-family: "Open Sans";
+        padding-top: 40px;
+        color:#fff;
+        }
+
+        i
+
+        .footer-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        }
+
+        .footer-content h3{
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        line-height: 3rem;
+        }
+
+        -footer-content p{
+        max-width: 500px;
+        margin: 10px auto;
+        line-height: 28px;
+        font-size: 14px;
         }
 
 
-
+        .footer-content .copyright{
+        
+        }
 
 
         /*-----------------------------------*\
@@ -1199,15 +1234,13 @@
       <script src="scripts.49198890e527f9236cd8.js" defer></script>
       <script src="main-es2015.aaa85ac78e665e4e2384.js" type="module"></script>
       <script src="main-es5.aaa85ac78e665e4e2384.js" nomodule defer></script>
-      <section class="section project" id="project" aria-label="project">
+      <section class="section project" id="project" aria-label="project" style="padding-top: 130px;">
         <div class="container">
 
           <h2 class="h2 section-title">BLOGS</h2>
 
           <p class="section-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna
-            aliqua.
+            Freedom of choice, time & price with Togopool
           </p>
 
           <ul class="grid-list">
@@ -1357,7 +1390,21 @@
       <section class="footer">
         <img src="./Bitmap.png" alt="bitmap" style="width: 100%;">
       </section>
-      
+      <footer>
+        <div class="footer-content">
+          <h3>Follow us</h3>
+          <ul class="socials">
+            <li><a href=""><i class="fa fa-facebook"></i></a></li>
+            <li><a href=""><i class="fa fa-twiiter"></i></a></li>
+            <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+            <li><a href=""><i class="fa fa-youtube"></i></a></li>
+            <li><a href=""><i class="fa fa-instagram"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <p>copyright &copy;2022 Togopool
+      </footer>
+
 
 </body>
 </html>
