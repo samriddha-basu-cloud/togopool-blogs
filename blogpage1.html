@@ -721,6 +721,49 @@
         font-weight: var(--fw-500);
         display: inline-block;
         } */
+            
+         .download{
+            position: relative;
+            left: 0; 
+            top: 0;
+            text-align: center;
+            color: white; 
+        }
+
+        .top-left{
+            position: absolute;
+            top: 15%;
+            left: 10%;
+            font-size: 1.5rem;
+            font-weight: bolder;
+            /* transform: translate(-50%, -50%); */
+        }
+
+        @media screen and (max-width: 768px) {
+            .top-left {
+                font-size: 5%;
+                top: 18%;
+                left: 10%;
+            }
+          }
+          /* @media screen and (width: 768px) {
+            .top-left {
+                font-size: 2%;
+                top: 20%;
+                left: 10%;
+            }
+          }  */
+        .play{
+            position: absolute;
+            top: 45%;
+            left: 4%; 
+        }
+
+        .app{
+            position: absolute;
+            top: 45%;
+            left: 25%;
+        }
         footer{
         
         background: #111;
@@ -1372,9 +1415,13 @@
           Our app’s SOS-button feature is not just for passengers. It is also available to you as drivers. So, if ever you feel in danger, you too can quickly dial for help. As you can see, we take the safety of all our users very seriously. So if it’s greater peace of mind you want during your trips, then Togopool is definitely the service for you. Don’t already have the Togopool app? No problem! It’s easy to get! You can download it from Google’s Play Store as well as from Apple’s App Store for free. Peace out, Togopoolers!
     
          </section>
-      <section class="footer">
-        <img src="./Bitmap.png" alt="bitmap" style="width: 100%;">
-      </section>
+      <section class="download">
+        <img class="bgimg"src="./Bitmap.png" alt="bitmap" style="width: 100%;">
+        <div class="top-left">Get App On <br> Get both Android and iOS APP for free</div>
+        <img class="play" src="./user-playstore.png" alt="playstore" style="width: 18%;">
+        <img class="app" src="./provider-appstore.png" alt="appstore" style="width: 20%;">
+        
+     </section>
       <footer>
         <div class="footer-content">
           <h3><center>Follow us </center></h3>
