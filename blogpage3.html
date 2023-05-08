@@ -63,7 +63,8 @@
         \*-----------------------------------*/
 
         :root {
-
+           
+          display: block;
         /**
         * colors
         */
@@ -384,10 +385,20 @@
         #PROJECT
         \*-----------------------------------*/
         .writeup{
-          padding: 10rem;
+          padding: 7rem;
           display: inline-block;
           vertical-align: top;
+          
         }
+
+        @media only screen and (min-width: 200px) and (max-width: 768px) {
+          .writeup{
+          padding: 7rem 3rem 5rem 3rem;
+          display: inline-block;
+          vertical-align: top;
+          
+        }
+      }
         .writeupHeading{
           padding-top: 2%;
           font-size: 5rem;
@@ -400,7 +411,7 @@
           margin-left: auto;
           margin-right: auto;
           width: 40%;
-          border-radius: 15px;
+          border-radius: 5px;
           margin-bottom: 55px;
         }
 
@@ -410,7 +421,6 @@
         }
 
 
-        
         .project .section-text { margin-block: 5px 35px; }
 
         .project-card {
@@ -722,95 +732,141 @@
         font-weight: var(--fw-500);
         display: inline-block;
         } */
+        .download{
+            position: relative;
+            left: 0; 
+            top: 0;
+            text-align: center;
+            color: white; 
+        }
+
+        .top-left{
+            position: absolute;
+            top: 15%;
+            left: 10%;
+            font-size: 2rem;
+            font-weight: bolder;
+            /* transform: translate(-50%, -50%); */
+        }
+        @media only screen and (min-width: 768px) and (max-width: 1199px) {
+            .top-left {
+                /* font-size: .7rem; */
+                top: 5%;
+                left: 08%;
+            }
+          } 
+        @media screen and (max-width: 448px) {
+            .top-left {
+                font-size: 1rem;
+                top: 7%;
+                left: 7%;
+            }
+          }
+          
+        .play{
+            position: absolute;
+            top: 45%;
+            left: 4%; 
+        }
+
+        .app{
+            position: absolute;
+            top: 45%;
+            left: 25%;
+        }
         footer{
-        
-        background: #111;
-        height: auto;
-        width: 100vw;
-        font-family: "Arial";
-        padding-top: 40px;
-        color:#fff;
+            
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #111;
+            height: auto;
+            width: 100vw;
+            font-family: "Open Sans";
+            padding-top: 40px;
+            color: #fff;
         }
-
-        i
-
         .footer-content{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
         }
-
         .footer-content h3{
-        font-size: 4rem;
-        font-weight: 400;
-        text-transform: capitalize;
-        line-height: 3rem;
+            font-size: 2rem;
+            font-weight: 400;
+            text-transform: capitalize;
+            line-height: 3rem;
+            margin-bottom: 2rem;
         }
-
         .footer-content p{
-        max-width: 500px;
-        margin: 10px auto;
-        line-height: 28px;
-        font-size: 14px;
+            max-width: 500px;
+            margin: 10px auto;
+            line-height: 28px;
+            font-size: 14px;
         }
         .socials{
-        list-style: none;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin: 10rem 60rem 15rem 60rem;
-        font-size: 50px;
-        color: #f4ac4e;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem 0 6.5rem 0;
+            transform: scale(2);
+        }
+        .socials li{
+            margin: 0 10px;
+        }
+        .socials a{
+            text-decoration: none;
+            color: #FF9B05;
+        }
+        .socials a i{
+            font-size: 1.1rem;
+            transition: color .4s ease;
+
+        }
+        .socials a:hover i{
+            color: #FF9B05;
         }
 
 
         .socialslinks{
-        list-style: none;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin: 0rem 50rem 5rem 50rem;
-        font-size: 20px;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem 0 3rem 0;
         }
-
         .socialslinks li{
-        margin: 0 10px;
-        color: #f4ac4e;
+            margin: 0 10px;
         }
-        
         .socialslinks a{
-          text-decoration: none;
-          color: #fff;
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2rem;
         }
 
-        .socialslinks a i{
-        font-size: 1.1rem;
-        transition: color .4s ease;
-        }
-        
         .socialslinks a:hover{
-        color:#f4b94e;
+            color: #FF9B05;
         }
 
         .footer-bottom{
-          background: #000;
-          width: 100vw;
-          padding: 20px 0;
-          text-align: center;
+            background: #111;
+            width: 100vw;
+            padding: 20px 0;
+            text-align: center;
         }
         .footer-bottom p{
-          font-size: 14px;
-          word-spacing: 2px;
-          text-transform: capitalize;
+            font-size: 14px;
+            word-spacing: 2px;
+            text-transform: capitalize;
         }
-
-          .footer-content .copyright{
-        
+        .footer-bottom span{
+            text-transform: uppercase;
+            opacity: .4;
+            font-weight: 200;
         }
-
-
         /*-----------------------------------*\
         #BACK TO TOP
         \*-----------------------------------*/
@@ -1228,8 +1284,6 @@
         .contact-card .card-icon { padding: 15px; }
 
         }
-        
-        
         </style>
         <script>
           (function(w, d, s, l, i) {
@@ -1269,7 +1323,7 @@
               </li>
     
               <li>
-                <a href="index.html" class="navbar-link" data-nav-link style="color: whitesmoke;">Blogs</a>
+                <a href="#" class="navbar-link" data-nav-link style="color: whitesmoke;">Blogs</a>
               </li>
     
               <li>
@@ -1332,51 +1386,55 @@
       <script src="scripts.49198890e527f9236cd8.js" defer></script>
       <script src="main-es2015.aaa85ac78e665e4e2384.js" type="module"></script>
       <script src="main-es5.aaa85ac78e665e4e2384.js" nomodule defer></script>
-      
-      <section class="writeup">
+      <div class="writeup">
         
-      <h1 class="writeupHeading">Carpooling in India: Why it's the Future of Transportation</h1>
-      <img src="Blog3.png" alt="" class="writeupimg">
-
-      <p class="writeuppara">As India's population continues to grow, so does the demand for efficient and sustainable transportation. With traffic congestion and air pollution becoming major concerns, carpooling has emerged as a viable solution. By sharing a ride with fellow commuters, you can not only save money but also reduce your carbon footprint. In this blog, we'll explore the benefits of carpooling and how our app can help you connect with like-minded commuters.
-        Benefits of Carpooling in India
-        Save Money - With rising fuel prices and maintenance costs, carpooling can be a cost-effective alternative to driving alone. By sharing the cost of fuel and tolls, you can save up to 50% on transportation expenses.
-        Reduce Your Carbon Footprint - India is one of the world's largest emitters of greenhouse gases. By carpooling, you can reduce your carbon footprint and contribute to a cleaner environment. According to a study by the Indian School of Business, carpooling can reduce CO2 emissions by up to 40%.
-        Connect with Like-Minded Commuters - Our app allows you to connect with fellow commuters who share your route and schedule. You can build relationships with people who have similar interests and work towards a common goal of reducing traffic congestion and pollution.
-        How Our Carpooling App Works
-        Download - Togopool is available for download on the App Store and Google Play.
-        Sign Up - Create a profile and provide details such as your route, schedule, and preferred payment method.
-        Search for Rides - Browse available rides or post a ride request with your pickup and drop-off locations.
-        Connect with Commuters - Once you find a ride, you can connect with the driver or passengers and coordinate pickup and drop-off locations.
-        Enjoy the Ride - Sit back, relax, and enjoy a comfortable and safe ride with your fellow commuters.
-        Download Togopool App Today If you're looking for an affordable and sustainable way to commute, download our carpooling app today. With our user-friendly interface and reliable service, you can enjoy a stress-free commute while contributing to a cleaner environment.
-  </p>
-      
+        <h1 class="writeupHeading">Carpooling in India: Why it's the Future of Transportation</h1>
+        <img src="Blog3.png" alt="" class="writeupimg">
+  
+        <p class="writeuppara">As India's population continues to grow, so does the demand for efficient and sustainable transportation. With traffic congestion and air pollution becoming major concerns, carpooling has emerged as a viable solution. By sharing a ride with fellow commuters, you can not only save money but also reduce your carbon footprint. In this blog, we'll explore the benefits of carpooling and how our app can help you connect with like-minded commuters.
+          Benefits of Carpooling in India
+          Save Money - With rising fuel prices and maintenance costs, carpooling can be a cost-effective alternative to driving alone. By sharing the cost of fuel and tolls, you can save up to 50% on transportation expenses.
+          Reduce Your Carbon Footprint - India is one of the world's largest emitters of greenhouse gases. By carpooling, you can reduce your carbon footprint and contribute to a cleaner environment. According to a study by the Indian School of Business, carpooling can reduce CO2 emissions by up to 40%.
+          Connect with Like-Minded Commuters - Our app allows you to connect with fellow commuters who share your route and schedule. You can build relationships with people who have similar interests and work towards a common goal of reducing traffic congestion and pollution.
+          How Our Carpooling App Works
+          Download - Togopool is available for download on the App Store and Google Play.
+          Sign Up - Create a profile and provide details such as your route, schedule, and preferred payment method.
+          Search for Rides - Browse available rides or post a ride request with your pickup and drop-off locations.
+          Connect with Commuters - Once you find a ride, you can connect with the driver or passengers and coordinate pickup and drop-off locations.
+          Enjoy the Ride - Sit back, relax, and enjoy a comfortable and safe ride with your fellow commuters.
+          Download Togopool App Today If you're looking for an affordable and sustainable way to commute, download our carpooling app today. With our user-friendly interface and reliable service, you can enjoy a stress-free commute while contributing to a cleaner environment.
+    </p>
+        
+  </div>
+         <section class="download">
+          <img class="bgimg"src="./Bitmap.png" alt="bitmap" style="width: 100%;">
+          <div class="top-left"f>Get App On <br> Get both Android and iOS APP for free</div>
+          <img class="play" src="./user-playstore.png" alt="playstore" style="width: 18%;">
+          <img class="app" src="./provider-appstore.png" alt="appstore" style="width: 20%;">
+          
        </section>
-      <section class="footer">
-        <img src="./Bitmap.png" alt="bitmap" style="width: 100%;">
-      </section>
       <footer>
-        <div class="footer-content">
-          <h3><center>Follow us </center></h3>
-          <ul class="socials">
-            <li><a href=""><i class="fa fa-facebook"></i></a></li>
-            <li><a href=""><i class="fa fa-twitter"></i></a></li>
-            <li><a href=""><i class="fa fa-linkedin"></i></a></li>
-            <li><a href=""><i class="fa fa-youtube"></i></a></li>
-            <li><a href=""><i class="fa fa-instagram"></i></a></li>
-          </ul>
-          <ul class="socialslinks">
-            <li><a href="">Terms and Conditions</a></li>
-            <li><a href="">Privacy Policy</a></li>
-            <li><a href="">Contact Us</a></li>
-            <li><a href="">Cookie Settings</a></li>
-          </ul>
-        </div>
-        <div class="footer-bottom">
-          <p>&copy;2022 Togopool
-        </div>
+          <div class="footer-content">
+              <h3>Follow Us</h3>
+              <ul class="socials">
+                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                  <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                  <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              </ul>
+              <ul class="socialslinks">
+                  <li><a href="">Terms and Conditions</a></li>
+                  <li><a href="">Privacy Policy</a></li>
+                  <li><a href="">Contact Us</a></li>
+                  <li><a href="">Cookie Settings</a></li>
+              </ul>
+          </div>
+          <div class="footer-bottom">
+              <p>&copy;2022 Togopool</p>
+          </div>
       </footer>
+  
 
 
 </body>
