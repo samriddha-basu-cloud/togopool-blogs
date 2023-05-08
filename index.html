@@ -64,6 +64,9 @@
 
         :root {
 
+
+        display: block;
+
         /**
         * colors
         */
@@ -138,7 +141,7 @@
 
         }
 
-
+        
 
 
 
@@ -695,95 +698,7 @@
         font-weight: var(--fw-500);
         display: inline-block;
         } */
-        footer{
-        
-        background: #111;
-        height: auto;
-        width: 100vw;
-        font-family: "Arial";
-        padding-top: 40px;
-        color:#fff;
-        }
-
-        i
-
-        .footer-content{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        text-align: center;
-        }
-
-        .footer-content h3{
-        font-size: 4rem;
-        font-weight: 400;
-        text-transform: capitalize;
-        line-height: 3rem;
-        }
-
-        .footer-content p{
-        max-width: 500px;
-        margin: 10px auto;
-        line-height: 28px;
-        font-size: 14px;
-        }
-        .socials{
-        list-style: none;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin: 10rem 60rem 15rem 60rem;
-        font-size: 50px;
-        color: #f4ac4e;
-        }
-
-
-        .socialslinks{
-        list-style: none;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin: 0rem 50rem 5rem 50rem;
-        font-size: 20px;
-        }
-
-        .socialslinks li{
-        margin: 0 10px;
-        color: #f4ac4e;
-        }
-        
-        .socialslinks a{
-          text-decoration: none;
-          color: #fff;
-        }
-
-        .socialslinks a i{
-        font-size: 1.1rem;
-        transition: color .4s ease;
-        }
-        
-        .socialslinks a:hover{
-        color:#f4b94e;
-        }
-
-        .footer-bottom{
-          background: #000;
-          width: 100vw;
-          padding: 20px 0;
-          text-align: center;
-        }
-        .footer-bottom p{
-          font-size: 14px;
-          word-spacing: 2px;
-          text-transform: capitalize;
-        }
-
-          .footer-content .copyright{
-        
-        }
-            
-          .download{
+        .download{
             position: relative;
             left: 0; 
             top: 0;
@@ -795,25 +710,25 @@
             position: absolute;
             top: 15%;
             left: 10%;
-            font-size: 1.5rem;
+            font-size: 2rem;
             font-weight: bolder;
             /* transform: translate(-50%, -50%); */
         }
-
-        @media screen and (max-width: 768px) {
+        @media only screen and (min-width: 768px) and (max-width: 1199px) {
             .top-left {
-                font-size: 5%;
-                top: 18%;
-                left: 10%;
+                /* font-size: .7rem; */
+                top: 5%;
+                left: 08%;
+            }
+          } 
+        @media screen and (max-width: 448px) {
+            .top-left {
+                font-size: 1rem;
+                top: 7%;
+                left: 7%;
             }
           }
-          /* @media screen and (width: 768px) {
-            .top-left {
-                font-size: 2%;
-                top: 20%;
-                left: 10%;
-            }
-          }  */
+          
         .play{
             position: absolute;
             top: 45%;
@@ -825,7 +740,99 @@
             top: 45%;
             left: 25%;
         }
+        footer{
+            
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #111;
+            height: auto;
+            width: 100vw;
+            font-family: "Open Sans";
+            padding-top: 40px;
+            color: #fff;
+        }
+        .footer-content{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        .footer-content h3{
+            font-size: 2rem;
+            font-weight: 400;
+            text-transform: capitalize;
+            line-height: 3rem;
+            margin-bottom: 2rem;
+        }
+        .footer-content p{
+            max-width: 500px;
+            margin: 10px auto;
+            line-height: 28px;
+            font-size: 14px;
+        }
+        .socials{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem 0 6.5rem 0;
+            transform: scale(2);
+        }
+        .socials li{
+            margin: 0 10px;
+        }
+        .socials a{
+            text-decoration: none;
+            color: #FF9B05;
+        }
+        .socials a i{
+            font-size: 1.1rem;
+            transition: color .4s ease;
 
+        }
+        .socials a:hover i{
+            color: #FF9B05;
+        }
+
+
+        .socialslinks{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem 0 3rem 0;
+        }
+        .socialslinks li{
+            margin: 0 10px;
+        }
+        .socialslinks a{
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2rem;
+        }
+
+        .socialslinks a:hover{
+            color: #FF9B05;
+        }
+
+        .footer-bottom{
+            background: #111;
+            width: 100vw;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer-bottom p{
+            font-size: 14px;
+            word-spacing: 2px;
+            text-transform: capitalize;
+        }
+        .footer-bottom span{
+            text-transform: uppercase;
+            opacity: .4;
+            font-weight: 200;
+        }
 
         /*-----------------------------------*\
         #BACK TO TOP
@@ -913,7 +920,11 @@
 
         }
 
-
+        .footer-content h3{
+        font-size: 2rem;
+        font-weight: 200;
+        line-height: rem;
+        }
 
 
 
@@ -942,7 +953,11 @@
 
         }
 
-
+        .footer-content h3{
+        font-size: 2rem;
+        font-weight: 200;
+        line-height: rem;
+        }
 
         /**
         * REUSED STYLE
@@ -1283,7 +1298,7 @@
               </li>
     
               <li>
-                <a href="#" class="navbar-link" data-nav-link style="color: whitesmoke;">Blogs</a>
+                <a href="index.html" class="navbar-link" data-nav-link style="color: whitesmoke;">Blogs</a>
               </li>
     
               <li>
@@ -1501,32 +1516,32 @@
       </section>
       <section class="download">
         <img class="bgimg"src="./Bitmap.png" alt="bitmap" style="width: 100%;">
-        <div class="top-left">Get App On <br> Get both Android and iOS APP for free</div>
+        <div class="top-left"f>Get App On <br> Get both Android and iOS APP for free</div>
         <img class="play" src="./user-playstore.png" alt="playstore" style="width: 18%;">
         <img class="app" src="./provider-appstore.png" alt="appstore" style="width: 20%;">
         
      </section>
-      <footer>
+    <footer>
         <div class="footer-content">
-          <h3><center>Follow us </center></h3>
-          <ul class="socials">
-            <li><a href=""><i class="fa fa-facebook"></i></a></li>
-            <li><a href=""><i class="fa fa-twitter"></i></a></li>
-            <li><a href=""><i class="fa fa-linkedin"></i></a></li>
-            <li><a href=""><i class="fa fa-youtube"></i></a></li>
-            <li><a href=""><i class="fa fa-instagram"></i></a></li>
-          </ul>
-          <ul class="socialslinks">
-            <li><a href="">Terms and Conditions</a></li>
-            <li><a href="">Privacy Policy</a></li>
-            <li><a href="">Contact Us</a></li>
-            <li><a href="">Cookie Settings</a></li>
-          </ul>
+            <h3>Follow Us</h3>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+            <ul class="socialslinks">
+                <li><a href="">Terms and Conditions</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Cookie Settings</a></li>
+            </ul>
         </div>
         <div class="footer-bottom">
-          <p>&copy;2022 Togopool
+            <p>&copy;2022 Togopool</p>
         </div>
-      </footer>
+    </footer>
 
 
 </body>

@@ -14,7 +14,7 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+
       
         <!-- 
           - favicon
@@ -63,7 +63,8 @@
         \*-----------------------------------*/
 
         :root {
-
+           
+          display: block;
         /**
         * colors
         */
@@ -384,9 +385,10 @@
         #PROJECT
         \*-----------------------------------*/
         .writeup{
-          padding: 100px;
+          padding: 10rem;
           display: inline-block;
           vertical-align: top;
+          
         }
         .writeupHeading{
           padding-top: 2%;
@@ -408,6 +410,53 @@
         .writeuppara{
           text-align: justify;
         }
+
+        @media only screen and (min-width: 768px) and (max-width: 1199px) {
+          .writeup{
+          padding: 100px;
+          display: inline-block;
+          vertical-align: top;
+          
+        }
+        .writeupHeading{
+          padding-top: 2%;
+          font-size: 5rem;
+          text-align: center;
+          color: #111;
+        }
+
+        .writeupimg{
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 40%;
+          border-radius: 5px;
+          margin-bottom: 55px;
+        }
+          } 
+        @media screen and (max-width: 448px) {
+          .writeup{
+          padding: 100px;
+          display: inline-block;
+          vertical-align: top;
+          overflow: hidden;
+        }
+        .writeupHeading{
+          padding-top: 2%;
+          font-size: 5rem;
+          text-align: center;
+          color: #111;
+        }
+
+        .writeupimg{
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 40%;
+          border-radius: 5px;
+          margin-bottom: 55px;
+        }
+          }
         
 
         .project .section-text { margin-block: 5px 35px; }
@@ -721,8 +770,7 @@
         font-weight: var(--fw-500);
         display: inline-block;
         } */
-            
-         .download{
+        .download{
             position: relative;
             left: 0; 
             top: 0;
@@ -734,25 +782,25 @@
             position: absolute;
             top: 15%;
             left: 10%;
-            font-size: 1.5rem;
+            font-size: 2rem;
             font-weight: bolder;
             /* transform: translate(-50%, -50%); */
         }
-
-        @media screen and (max-width: 768px) {
+        @media only screen and (min-width: 768px) and (max-width: 1199px) {
             .top-left {
-                font-size: 5%;
-                top: 18%;
-                left: 10%;
+                /* font-size: .7rem; */
+                top: 5%;
+                left: 08%;
+            }
+          } 
+        @media screen and (max-width: 448px) {
+            .top-left {
+                font-size: 1rem;
+                top: 7%;
+                left: 7%;
             }
           }
-          /* @media screen and (width: 768px) {
-            .top-left {
-                font-size: 2%;
-                top: 20%;
-                left: 10%;
-            }
-          }  */
+          
         .play{
             position: absolute;
             top: 45%;
@@ -765,94 +813,98 @@
             left: 25%;
         }
         footer{
-        
-        background: #111;
-        height: auto;
-        width: 100vw;
-        font-family: "Arial";
-        padding-top: 40px;
-        color:#fff;
+            
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #111;
+            height: auto;
+            width: 100vw;
+            font-family: "Open Sans";
+            padding-top: 40px;
+            color: #fff;
         }
-
-        i
-
         .footer-content{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
         }
-
         .footer-content h3{
-        font-size: 4rem;
-        font-weight: 400;
-        text-transform: capitalize;
-        line-height: 3rem;
+            font-size: 2rem;
+            font-weight: 400;
+            text-transform: capitalize;
+            line-height: 3rem;
+            margin-bottom: 2rem;
         }
-
         .footer-content p{
-        max-width: 500px;
-        margin: 10px auto;
-        line-height: 28px;
-        font-size: 14px;
+            max-width: 500px;
+            margin: 10px auto;
+            line-height: 28px;
+            font-size: 14px;
         }
         .socials{
-        list-style: none;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin: 10rem 60rem 15rem 60rem;
-        font-size: 50px;
-        color: #f4ac4e;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem 0 6.5rem 0;
+            transform: scale(2);
+        }
+        .socials li{
+            margin: 0 10px;
+        }
+        .socials a{
+            text-decoration: none;
+            color: #FF9B05;
+        }
+        .socials a i{
+            font-size: 1.1rem;
+            transition: color .4s ease;
+
+        }
+        .socials a:hover i{
+            color: #FF9B05;
         }
 
 
         .socialslinks{
-        list-style: none;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin: 0rem 50rem 5rem 50rem;
-        font-size: 20px;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem 0 3rem 0;
         }
-
         .socialslinks li{
-        margin: 0 10px;
-        color: #f4ac4e;
+            margin: 0 10px;
         }
-        
         .socialslinks a{
-          text-decoration: none;
-          color: #fff;
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2rem;
         }
 
-        .socialslinks a i{
-        font-size: 1.1rem;
-        transition: color .4s ease;
-        }
-        
         .socialslinks a:hover{
-        color:#f4b94e;
+            color: #FF9B05;
         }
 
         .footer-bottom{
-          background: #000;
-          width: 100vw;
-          padding: 20px 0;
-          text-align: center;
+            background: #111;
+            width: 100vw;
+            padding: 20px 0;
+            text-align: center;
         }
         .footer-bottom p{
-          font-size: 14px;
-          word-spacing: 2px;
-          text-transform: capitalize;
+            font-size: 14px;
+            word-spacing: 2px;
+            text-transform: capitalize;
         }
-
-          .footer-content .copyright{
-        
+        .footer-bottom span{
+            text-transform: uppercase;
+            opacity: .4;
+            font-weight: 200;
         }
-
-
         /*-----------------------------------*\
         #BACK TO TOP
         \*-----------------------------------*/
@@ -1372,7 +1424,7 @@
       <script src="scripts.49198890e527f9236cd8.js" defer></script>
       <script src="main-es2015.aaa85ac78e665e4e2384.js" type="module"></script>
       <script src="main-es5.aaa85ac78e665e4e2384.js" nomodule defer></script>
-      <section class="writeup">
+      <div class="writeup">
         
         <h1 class="writeupHeading">Benefits of Carpooling in India</h1>
         <img src="Blog1.jpeg" alt="" class="writeupimg">
@@ -1414,35 +1466,36 @@
           <h3 style="color: #111;">2. Our drivers also have an in-app SOS button</h3>
           Our app’s SOS-button feature is not just for passengers. It is also available to you as drivers. So, if ever you feel in danger, you too can quickly dial for help. As you can see, we take the safety of all our users very seriously. So if it’s greater peace of mind you want during your trips, then Togopool is definitely the service for you. Don’t already have the Togopool app? No problem! It’s easy to get! You can download it from Google’s Play Store as well as from Apple’s App Store for free. Peace out, Togopoolers!
     
-         </section>
-      <section class="download">
-        <img class="bgimg"src="./Bitmap.png" alt="bitmap" style="width: 100%;">
-        <div class="top-left">Get App On <br> Get both Android and iOS APP for free</div>
-        <img class="play" src="./user-playstore.png" alt="playstore" style="width: 18%;">
-        <img class="app" src="./provider-appstore.png" alt="appstore" style="width: 20%;">
-        
-     </section>
+        </div>
+         <section class="download">
+          <img class="bgimg"src="./Bitmap.png" alt="bitmap" style="width: 100%;">
+          <div class="top-left"f>Get App On <br> Get both Android and iOS APP for free</div>
+          <img class="play" src="./user-playstore.png" alt="playstore" style="width: 18%;">
+          <img class="app" src="./provider-appstore.png" alt="appstore" style="width: 20%;">
+          
+       </section>
       <footer>
-        <div class="footer-content">
-          <h3><center>Follow us </center></h3>
-          <ul class="socials">
-            <li><a href=""><i class="fa fa-facebook"></i></a></li>
-            <li><a href=""><i class="fa fa-twitter"></i></a></li>
-            <li><a href=""><i class="fa fa-linkedin"></i></a></li>
-            <li><a href=""><i class="fa fa-youtube"></i></a></li>
-            <li><a href=""><i class="fa fa-instagram"></i></a></li>
-          </ul>
-          <ul class="socialslinks">
-            <li><a href="">Terms and Conditions</a></li>
-            <li><a href="">Privacy Policy</a></li>
-            <li><a href="">Contact Us</a></li>
-            <li><a href="">Cookie Settings</a></li>
-          </ul>
-        </div>
-        <div class="footer-bottom">
-          <p>&copy;2022 Togopool
-        </div>
+          <div class="footer-content">
+              <h3>Follow Us</h3>
+              <ul class="socials">
+                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                  <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                  <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              </ul>
+              <ul class="socialslinks">
+                  <li><a href="">Terms and Conditions</a></li>
+                  <li><a href="">Privacy Policy</a></li>
+                  <li><a href="">Contact Us</a></li>
+                  <li><a href="">Cookie Settings</a></li>
+              </ul>
+          </div>
+          <div class="footer-bottom">
+              <p>&copy;2022 Togopool</p>
+          </div>
       </footer>
+  
 
 
 </body>
